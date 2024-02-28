@@ -13,7 +13,6 @@ const errorHandler = (err, req, res, next) => {
         case constants.UNAUTHORIZED:
             const Unauthorized = {title: "Unauthorized", message:err.message, stackTrace:err.stack}
             res.status(statusCode).send(Unauthorized);
-            
         case constants.FORBIDDEN:
             const forbidden = {title: "Forbidden", message:err.message, stackTrace:err.stack}
             res.status(statusCode).send(forbidden);
@@ -21,6 +20,7 @@ const errorHandler = (err, req, res, next) => {
             const Server_error = {title: "Server_error", message:err.message, stackTrace:err.stack}
             res.status(statusCode).send(Server_error);
         default:
+            console.log("No err, all good!")
             break;
     }   
 
