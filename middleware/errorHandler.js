@@ -13,6 +13,7 @@ const errorHandler = (err, req, res, next) => {
         case constants.UNAUTHORIZED:
             const Unauthorized = {title: "Unauthorized", message:err.message, stackTrace:err.stack}
             res.status(statusCode).send(Unauthorized);
+            
         case constants.FORBIDDEN:
             const forbidden = {title: "Forbidden", message:err.message, stackTrace:err.stack}
             res.status(statusCode).send(forbidden);
