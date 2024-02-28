@@ -16,6 +16,9 @@ const errorHandler = (err, req, res, next) => {
         case constants.FORBIDDEN:
             const forbidden = {title: "Forbidden", message:err.message, stackTrace:err.stack}
             res.status(statusCode).send(forbidden);
+        case constants.SERVER_ERROR:
+            const Server_error = {title: "Server_error", message:err.message, stackTrace:err.stack}
+            res.status(statusCode).send(Server_error);
         default:
             break;
     }   
