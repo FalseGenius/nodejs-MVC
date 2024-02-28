@@ -54,7 +54,7 @@ A simple project that allows users to register themselves, create contacts and v
 
 All routes are under **/routes** folder. Controllers, Models and Middlewares are in their respective folders.
 
-Start by creating a user, available at http://localhost:5001/api/users/register via POST request.
+Start by creating a user, available at http://localhost:PORT/api/users/register via POST request.
 
 Inputs
 ```
