@@ -19,6 +19,9 @@ A simple project that allows users to register themselves, create contacts and v
 
 ### Prerequisites
 
+- [Node.js](https://nodejs.org/) installed on your machine
+- [MongoDB](https://www.mongodb.com/) set up and running locally or on a remote server
+
 
 ### Installation and Setup
 
