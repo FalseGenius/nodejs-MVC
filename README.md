@@ -27,7 +27,7 @@ A simple project that allows users to register themselves, create contacts and v
 
     ```bash
     git clone https://github.com/FalseGenius/nodejs-MVC.git
-    ***cd nodejs-MVC***
+    cd nodejs-MVC
     ```
 
 2. Install dependencies:
@@ -46,7 +46,7 @@ A simple project that allows users to register themselves, create contacts and v
     npm run dev
     ```
 
-    The application should now be running on [http://localhost:<PORT>](http://localhost:5000).
+    The application should now be running on [http://localhost:PORT](http://localhost:5000).
 
 
 
