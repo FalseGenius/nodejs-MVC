@@ -16,8 +16,15 @@ const getContact = (req, res) => {
 // @desc Create a contact
 // @route POST /api/contact
 // @access public
-const createContact = (req, res) => {
-    res.status(200).json({message:"Create contact"});
+const createContact = (req, res, next) => {
+    console.log(req.body);
+    const {name, email} = req.body;
+    if (!name || !email) {
+        res.status(400);
+        throw new Error("Add body");
+    }
+
+    res.status(201).json({message:"Create contact"});
 };
 
 // @desc Update a contact
