@@ -12,7 +12,7 @@ A simple project that allows users to register themselves, create contacts and v
   Custom middleware functions have been implemented to handle various aspects of the application's request-response cycle. Middlewares are crucial for executing code logic before reaching the final route handler.
 
 - **JWT Integration:**
-  JSON Web Token (JWT) is integrated for user authentication and authorization. JWTs are issued upon user registration or login and are used to secure routes that require authentication.
+  JSON Web Token (JWT) is integrated for user authentication and authorization. JWTs are issued upon user login and are used to secure routes that require authentication.
 
 
 ## Usage
